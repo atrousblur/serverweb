@@ -21,7 +21,7 @@
 		}
 
 		// 3. 요청을 설정
-		xhr.open("GET", "/serverweb/ajaxtset01?id=" + myform.id.value, true);
+		xhr.open("GET", "/serverweb/ajaxtest01?id=" + myform.id.value, true);
 
 		// 4. 요청 보내기
 		xhr.send(); //get일때는 비어있는 send();
@@ -29,12 +29,11 @@
 </script>
 </head>
 <body>
-	<h1>Ajax 테스트하기</h1>
+	<h1>Ajax 테스트하기(JQuery...)</h1>
 	<form name="myform">
-		<input type="text" name="id" />
-		<!-- 1. 버튼을 누르면 자바스크립트 함수를 호출하며 요청을 보낸다. -->
-		<input type="button" value="ajax테스트" onclick="runAjax()" />
+		<input type="text" name="id" id="id"/>
+		<input type="button" value="ajax테스트" id="ajaxbtn"/>
 	</form>
-	<div id="result"><%=request.getAttribute("msg")%></div>
+	<div id="result"></div>
 </body>
 </html>
