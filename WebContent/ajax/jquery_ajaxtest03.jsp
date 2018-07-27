@@ -22,8 +22,8 @@
 <body>
 	<h1>Ajax 테스트하기(JQuery...POST)</h1>
 	<form name="myform">
-		<input type="text" name="id" id="id" /> <input type="button"
-			value="ajax테스트" id="ajaxbtn" />
+		<input type="text" name="id" id="id" /> 
+		<input type="button" value="ajax테스트" id="ajaxbtn" />
 	</form>
 	<div id="result"></div>
 </body>
